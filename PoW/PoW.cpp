@@ -77,7 +77,7 @@ void endPoW(time_t endTime, struct tm* convTime) {
 
 void showRunningTime(time_t startTime, time_t endTime) {
 	
-	cout << "경과시간: " << (double)(endTime - startTime) << "초";
+	cout << "경과시간: " << (double)(endTime - startTime) << "초" << endl;
 }
 
 
@@ -110,5 +110,7 @@ int main() {
 	endPoW(endTime, convTime);
 
 	showRunningTime(startTime, endTime);
+
+	system("PAUSE");
 }
 
